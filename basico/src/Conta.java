@@ -4,7 +4,7 @@ public class Conta {
     BigDecimal saldo = new BigDecimal("0");
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
 
     public void depositar(String valor){
         BigDecimal convertido = new BigDecimal(valor);
