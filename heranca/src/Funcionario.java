@@ -9,7 +9,7 @@ public class Funcionario {
     }
 
     public BigDecimal getBoniticacao(){
-        return this.salario.multiply(new BigDecimal("0.1"));
+        return this.salario.multiply(new BigDecimal("0.15"));
     }
 
     public String getNome() {
