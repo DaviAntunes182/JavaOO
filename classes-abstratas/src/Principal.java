@@ -1,21 +1,29 @@
 public class Principal {
     public static void main(String[] args) {
+        Funcionario nico = new Funcionario();
+        Gerente marco = new Gerente();
+        //Todo gerente é funcionario
+        Funcionario teste = new Gerente();
+        //Nem todo funcionario é gerente
+        //Gerente teste = new Funcionario();
 
-        //Não conseguimos instanciar uma classe abstrata
-//        Funcionario f1 = new Funcionario();
+        //Funcionarios não podem acessar os métodos de gerente
+        //teste.autentica(2132);
 
-        Gerente g1 = new Gerente();
-        g1.setNome("Marcos");
-        g1.setSalario("5000");
+        nico.setNome("Nico Steppat");
+        nico.setCpf("123456789-9");
+        nico.setSalario("2600.00");
 
-        EditorVideo ev1 = new EditorVideo();
-        ev1.setSalario("2500");
+        marco.setNome("Marco");
+        marco.setCpf("987654321-1");
+        marco.setSalario("5000");
 
-        ControleBonifacao controle = new ControleBonifacao();
-        controle.registra(g1);
-        controle.registra(ev1);
+        System.out.println(nico.getNome());
+        System.out.println(nico.getBoniticacao());
 
-        System.out.println(controle.getSoma());
+        System.out.println(marco.getNome());
+        System.out.println(marco.getBoniticacao());
+
 
     }
 }
