@@ -17,7 +17,7 @@ public class Principal {
 
         marco.setNome("Marco");
         marco.setCpf("987654321-1");
-        marco.setSalario("5000");
+        marco.setSalario("5100");
 
         System.out.println(nico.getNome());
         System.out.println(nico.getBoniticacao());
