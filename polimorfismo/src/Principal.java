@@ -8,7 +8,6 @@ public class Principal {
         //Gerente teste = new Funcionario();
 
         //Funcionarios não podem acessar os métodos de gerente
-        //
         //teste.autentica(2132);
 
         nico.setNome("Nico Steppat");
