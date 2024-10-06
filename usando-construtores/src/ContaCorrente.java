@@ -10,7 +10,7 @@ public class ContaCorrente extends Conta{
     //Redefinindo um método, sobrescrevendo
     @Override
     public String sacar(String valor) {
-        BigDecimal taxa = new BigDecimal("0.2");
+        BigDecimal taxa = new BigDecimal("0.25");
         String valorASacar = new BigDecimal(valor).add(taxa).toString();
         return super.sacar(valorASacar);
     }
